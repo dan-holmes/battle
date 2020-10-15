@@ -1,2 +1,2 @@
-require_relative "./battle"
+require_relative "./lib/app"
 run Battle

@@ -1,6 +1,6 @@
 ENV["RACK_ENV"] = "test"
 
-require_relative "../battle.rb"
+require_relative "../lib/app.rb"
 require "capybara"
 require "capybara/rspec"
 require "rspec"
