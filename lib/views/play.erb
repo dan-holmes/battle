@@ -1,3 +1,5 @@
-<%= "#{@player1_name} vs. #{@player2_name}" %> </br>
-<%= "#{@player1_name}: #{@player1_hp} Hitpoints" %> </br>
-<%= "#{@player2_name}: #{@player2_hp} Hitpoints" %>
+<%= "#{$player1.name} vs. #{$player2.name}" %> </br>
+<%= "You have attacked." if @attack %> </br>
+<%= "#{$player1.name}: #{@player1_hp} Hitpoints" %> </br>
+<%= "#{$player2.name}: #{@player2_hp} Hitpoints" %> </br>
+<a href="/attack">Attack</a>

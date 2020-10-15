@@ -13,3 +13,21 @@ feature "View hitpoints" do
     expect(page).to have_content("Dan: 100 Hitpoints")
   end
 end
+
+# As Player 1,
+# So I can win a game of Battle,
+# I want to attack Player 2, and I want to get a confirmation
+
+feature "Attacking" do
+  scenario "Attack player 2 and get a confirmation" do
+    sign_in_and_play
+    click_link "Attack"
+    expect(page).to have_content("You have attacked.")
+  end
+
+  scenario "Attack player 2 and see that their hitpoints have reduced" do
+    sign_in_and_play
+    click_link "Attack"
+    expect(page).to have_content("Otis: 80 Hitpoints")
+  end
+end
